@@ -1,0 +1,98 @@
+body {
+    background: #2e2e2e;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+h1 {
+    font-size: 40px;
+    color: lightblue;
+    margin: 0;
+}
+.showButtons {
+    background-color: indigo;
+    color: white;
+    border: 2px solid black;
+    border-radius: 25px;;
+    height: 5vh;
+    width: 25vw;
+    margin: 20px;
+    box-shadow: 2px 2px black;
+    font-size: clamp(6px, 2vw, 24px);
+    font-weight: bold;
+}
+.showButtons:hover, .searchButtons:hover {
+    background-color: tomato;
+}
+
+#cardDivContainer {
+    margin-left: 3vw;
+    margin-right: 1vw;
+    display: grid;
+    grid-template-columns: repeat(2,48vw);
+    justify-content: center; 
+}
+.cardDivs {
+    border: 2px solid indigo;
+    height: 78vh;
+    width: 45vw;
+    background-color: #494949;
+    box-shadow: 2px 2px Black;
+    border-radius: 20px;
+}
+.cardDivs h2 {
+    margin-top: 15px;
+    font-size: clamp(16px, 2vw, 24px);
+}
+.cardDivs hr {
+    border: 2px solid indigo;
+}
+.cardSearchInputs {
+    text-align: center;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+}
+.searchButtons {
+    background-color: indigo;
+    color: white;
+    border: 1px solid indigo;
+    border-radius: 10px;
+    height: 25px;
+    width: 70px;
+    box-shadow: 2px 2px black;
+}
+.cardDisplayDivs {
+    position: relative;
+    /* border: 2px solid tomato; */
+    height: 80%;
+    border-radius: 20px;
+    overflow: auto;
+    display: grid;
+    gap: 5%;
+    grid-template-columns: repeat(2,20vw);
+}
+.mtgCards {
+    border: 2px solid indigo;
+    margin: 2%;
+}
+.cardImages {
+    border-radius: 20px;
+    cursor: pointer;
+}
+.mtgCards:hover {
+    animation: bounce 0.3s linear;
+    cursor: pointer;
+}
+
+
+@keyframes bounce {
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}

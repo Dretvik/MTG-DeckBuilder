@@ -1,0 +1,24 @@
+Magic The Gathering - Deck Builder  --- By Ellie Marie Pedersen
+
+1.  Lag en mockup
+
+2.  Lag et basic generlt oppsett for frontenden med Vue
+
+3.  bruk mtgSDK (https://github.com/MagicTheGathering/mtg-sdk-javascript)
+
+4.  Vis frem et random kort på skjermen
+
+5.  Lag et kortotek - hvor du kan filtrere etter sets, types, subtypes og supertypes, og vis frem alle kortene som mather filteret
+
+6.  Lag en Deck Builder med en søkefunksjon (hvis man søker "Black Lotus" kommer det opp, du kan så trykke på det for å legge til i Decket)
+
+7.  Generer et random deck
+
+8.  Innlogging, da må du ha en database (SQL/SSMS eller Firebase). Brukernavn og passord
+
+9.  Hashe passordet med SHA-256 hashing algoritme - lagre den hashede versjonen av passordet i databasen, ikke selve passordet.
+    Så når brukern logger inn, hasher du på nytt og sammenligner med hashen i databasen.
+
+10. Lagre decks brukern har laget i databasen (prøv å lag et export string system)
+
+11. Styling. F.eks. Tailwind CSS, Bootstrap, SCSS...
